@@ -1,0 +1,30 @@
+package com.example.demo.Controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+//import com.example.demo.Entity.User;
+
+
+@Controller
+public class UserController {
+	
+
+	@GetMapping("/")
+	public String register(Model model) {
+		User user = new User()
+;		
+		
+		
+		return"register";
+	}
+	
+	@PostMapping("/registerUser")
+	public String registerUser() {
+		
+		return " home ";
+	}
+
+}
